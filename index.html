@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <title>SpellFister | Ikes Games</title>
   <meta
@@ -40,7 +41,7 @@
     </p>
 
     <div class="hero-buttons">
-      <a class="button primary" href="#media">View Screenshots</a>
+      <a class="button primary" href="#media">View Media</a>
       <a class="button secondary" href="https://www.youtube.com/@IkesGames" target="_blank" rel="noopener noreferrer">Watch Devlog</a>
     </div>
   </div>
@@ -66,16 +67,32 @@
 </section>
 
 <section id="media" class="section">
-  <div class="section-heading-row">
-    <div>
-      <p class="eyebrow">Media</p>
-      <h2>Screenshots</h2>
-    </div>
+  <p class="eyebrow">Media</p>
+  <h2>Devlog</h2>
 
-    <p class="media-note">
-      Early development gameplay. More spells, enemies, arenas, and polish are in progress.
-    </p>
+  <p class="media-intro">
+    Follow SpellFister’s development through short updates on new systems,
+    gameplay experiments, and progress toward the Steam page.
+  </p>
+
+  <div class="video-frame">
+    <iframe
+	  src="https://www.youtube.com/embed/PcB2m2cVcmw"
+	  title="SpellFister Devlog"
+	  referrerpolicy="strict-origin-when-cross-origin"
+	  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	  allowfullscreen>
+    </iframe>
   </div>
+
+  <div class="media-section-spacer"></div>
+
+  <p class="eyebrow">Screenshots</p>
+  <h2>Early gameplay</h2>
+
+  <p class="media-intro">
+    Early development gameplay. More spells, enemies, arenas, and polish are in progress.
+  </p>
 
   <div class="media-grid">
     <img src="assets/screenshot-1.png" alt="SpellFister gameplay screenshot" />

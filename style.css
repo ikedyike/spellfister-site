@@ -131,6 +131,13 @@ line-height: 1;
 letter-spacing: -0.055em;
 }
 
+h3 {
+margin: 0 0 8px;
+font-size: clamp(1.6rem, 3vw, 2.4rem);
+line-height: 1;
+letter-spacing: -0.04em;
+}
+
 p {
 color: var(--muted);
 font-size: 1.05rem;
@@ -204,18 +211,34 @@ padding-top: 18px;
 margin-top: 0;
 }
 
-.section-heading-row {
-display: flex;
-justify-content: space-between;
-gap: 32px;
-align-items: end;
+.media-intro {
+max-width: 680px;
+margin: 0 0 28px;
+color: var(--muted-dark);
+font-size: 1.05rem;
 }
 
-.media-note {
-max-width: 380px;
-margin: 0 0 24px;
-color: var(--muted-dark);
-font-size: 0.98rem;
+.video-frame {
+position: relative;
+width: 100%;
+aspect-ratio: 16 / 9;
+overflow: hidden;
+border-radius: 20px;
+border: 1px solid var(--border);
+background: var(--bg-soft);
+box-shadow: 0 22px 70px rgba(0, 0, 0, 0.36);
+}
+
+.video-frame iframe {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+.media-section-spacer {
+height: 72px;
 }
 
 .media-grid {
@@ -271,16 +294,50 @@ font-size: 0.95rem;
 
 @media (max-width: 900px) {
 .site-header {
-position: absolute;
+position: fixed;
+padding: 14px 22px;
 }
 
 nav {
 display: none;
 }
 
+.brand {
+font-size: 1.2rem;
+}
+
 .hero {
-min-height: 88vh;
-padding: 120px 24px 72px;
+min-height: 92vh;
+padding: 112px 24px 72px;
+text-align: center;
+justify-content: center;
+background:
+linear-gradient(180deg, rgba(7, 4, 7, 0.62), rgba(7, 4, 7, 0.92)),
+url("assets/hero.png") center / cover;
+}
+
+.hero-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1 {
+max-width: 100%;
+font-size: clamp(4.4rem, 22vw, 7rem);
+line-height: 0.95;
+text-align: center;
+}
+
+.tagline {
+max-width: 34rem;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.hero-buttons {
+justify-content: center;
 }
 
 .section {
@@ -296,12 +353,11 @@ grid-template-columns: 1fr;
 grid-row: auto;
 }
 
-.section-heading-row {
-display: block;
+.media-intro {
+max-width: none;
 }
 
-.media-note {
-max-width: none;
-margin-top: 10px;
+.media-section-spacer {
+height: 56px;
 }
 }
