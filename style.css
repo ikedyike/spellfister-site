@@ -201,10 +201,10 @@ padding-top: 88px;
 }
 
 .two-column {
-display: grid;
-grid-template-columns: 0.95fr 1.05fr;
-gap: 64px;
-align-items: start;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 64px;
+  align-items: center;
 }
 
 .section-copy {
@@ -373,11 +373,23 @@ padding: 58px 24px;
 padding-top: 72px;
 }
 
-.two-column,
+.two-column {
+grid-template-columns: 1fr;
+gap: 24px;
+align-items: start;
+}
+
+.section-copy {
+padding-top: 0;
+}
+
 .media-grid {
 grid-template-columns: 1fr;
 }
 
+.media-grid img {
+grid-row: auto;
+}
 .media-grid img:first-child {
 grid-row: auto;
 }
