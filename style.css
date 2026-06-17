@@ -216,6 +216,10 @@ padding-top: 18px;
 margin-top: 0;
 }
 
+.playtest-actions {
+margin-top: 28px;
+}
+
 .media-intro {
 max-width: 680px;
 margin: 0 0 28px;
@@ -311,12 +315,12 @@ font-size: 1.05rem;
 
 nav {
 display: flex;
-gap: 10px;
+gap: 8px;
 margin-left: auto;
 }
 
 nav a {
-font-size: 0.78rem;
+font-size: 0.72rem;
 color: var(--muted);
 }
 
